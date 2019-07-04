@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.sun.service">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
+        android:name=".WellBeApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,8 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SongActivity"/>
+        <service android:name=".DownloadIntentService"/>
         <service android:name=".MyService" />
-        <service android:name=".BoundService"/>
+        <service android:name=".BoundService" />
+        <service android:name=".SongService"/>
     </application>
 
 </manifest>

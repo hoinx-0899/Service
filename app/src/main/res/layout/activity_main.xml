@@ -10,6 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/start_service" />
+
     <Button
         android:id="@+id/btnStartBound"
         android:layout_width="wrap_content"
@@ -21,5 +22,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/stop_service" />
+
+    <Button
+        android:id="@+id/btnSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/media_playback" />
 
 </LinearLayout>

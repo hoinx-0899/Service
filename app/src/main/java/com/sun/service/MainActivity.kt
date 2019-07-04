@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnStart.setOnClickListener(this)
         btnStop.setOnClickListener(this)
         btnStartBound.setOnClickListener(this)
+        btnSong.setOnClickListener(this)
     }
 
     override fun onClick(p0: View) {
@@ -64,6 +65,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 }
                 bindService(intent, conn, Context.BIND_AUTO_CREATE)
 
+            }
+            R.id.btnSong->{
+                startActivity(Intent(this,SongActivity::class.java))
             }
         }
 
